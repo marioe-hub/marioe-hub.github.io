@@ -1,13 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Estilo de Vida Polanco CMD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Estilo de Vida Polanco</title>
     <meta name="facebook-domain-verification" content="ry71k5i6nbiynfs1pdpopb3qcfg32f" />
+    <style>
+        /* Estilos generales para un look moderno */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f4f8; /* Un gris-azul muy sutil y médico */
+            color: #2d3748;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Tarjeta central flotante */
+        .card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            border-top: 6px solid #0077b6; /* Azul corporativo */
+        }
+
+        /* Títulos y textos */
+        h1 {
+            color: #0077b6;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        .legal {
+            font-size: 0.85em;
+            color: #718096;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-container {
+            text-align: left;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .info-item {
+            margin: 12px 0;
+            font-size: 1.05em;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Pie de página sutil */
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #a0aec0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Clínica Estilo de Vida Polanco</h1>
-    <p>Contacto: 55 5584 5510</p>
-    <p>Dirección: Av. Ferrocarril de Cuernavaca #218</p>
-    <p>Razón Social: Martin Diaz Marcelin</p>
+
+    <div class="card">
+        <h1>Clínica Estilo de Vida Polanco</h1>
+        <div class="legal">Razón Social: Martin Diaz Marcelin</div>
+        
+        <div class="info-container">
+            <div class="info-item">
+                <span class="icon">📞</span> 
+                <strong>Contacto:</strong>&nbsp; 55 5584 5510
+            </div>
+            <div class="info-item">
+                <span class="icon">📍</span> 
+                <strong>Dirección:</strong>&nbsp; Av. Ferrocarril de Cuernavaca #218
+            </div>
+        </div>
+
+        <div class="footer">
+            Portal oficial de información de la clínica.
+        </div>
+    </div>
+
 </body>
 </html>
