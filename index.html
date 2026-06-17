@@ -24,7 +24,8 @@
         .hero { text-align: center; padding: 60px 20px 20px; }
         .hero h1 { font-size: 3.5em; font-weight: 900; font-style: italic; color: #333; letter-spacing: -1px; margin-bottom: 10px; }
         .hero p { font-size: 1.2em; color: #555; margin-bottom: 30px; }
-        .btn-green { background-color: #1b7a1b; color: white; padding: 12px 30px; border-radius: 5px; font-weight: bold; display: inline-block; font-size: 1.1em; border: none; cursor: pointer; }
+        .btn-green { background-color: #1b7a1b; color: white; padding: 12px 30px; border-radius: 5px; font-weight: bold; display: inline-block; font-size: 1.1em; border: none; cursor: pointer; transition: 0.3s; }
+        .btn-green:hover { background-color: #145c14; }
         
         /* NAVEGACIÓN Y LOGO */
         .brand-section { text-align: center; padding: 30px 0; border-bottom: 1px solid #eee; }
@@ -37,20 +38,18 @@
         .feature-item { max-width: 120px; }
         .feature-icon { font-size: 3em; margin-bottom: 10px; }
         .feature-text { font-size: 0.9em; font-weight: bold; color: #555; }
-        .whatsapp-container { text-align: center; margin-bottom: 50px; }
-        .btn-whatsapp { background-color: #25D366; color: white; padding: 10px 25px; border-radius: 20px; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; }
-
+        
         /* CATÁLOGO DE PRODUCTOS */
         .products-section { padding: 40px 0; }
-        .products-title { text-align: center; font-size: 1.5em; margin-bottom: 40px; }
+        .products-title { text-align: center; font-size: 1.5em; margin-bottom: 40px; font-weight: bold; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-        .card { border: 1px solid #eaeaea; text-align: center; background: #fff; display: flex; flex-direction: column; }
-        .card-header { background-color: #387c2b; color: white; padding: 30px 10px; font-size: 1.3em; font-weight: bold; min-height: 60px; display: flex; align-items: center; justify-content: center; }
+        .card { border: 1px solid #eaeaea; text-align: center; background: #fff; display: flex; flex-direction: column; border-radius: 4px; overflow: hidden; }
+        .card-header { background-color: #387c2b; color: white; padding: 20px 10px; font-size: 1.1em; font-weight: bold; min-height: 50px; display: flex; align-items: center; justify-content: center; }
         .card-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
         .stars { color: #f39c12; letter-spacing: 2px; margin: 10px 0; font-size: 0.8em; }
         .price { font-weight: bold; font-size: 1.2em; margin-bottom: 15px; }
-        .btn-outline { border: 1px solid #ccc; background: white; color: #333; padding: 8px; font-size: 0.9em; cursor: pointer; transition: 0.3s; margin-top: auto; }
-        .btn-outline:hover { background: #f5f5f5; }
+        .btn-outline { border: 1px solid #ccc; background: white; color: #333; padding: 10px 5px; font-size: 0.85em; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: auto; border-radius: 4px; }
+        .btn-outline:hover { background: #f0f0f0; border-color: #999; }
 
         /* INFORMACIÓN Y MAPA */
         .info-section { background-color: #fcfcfc; padding: 60px 20px; border-top: 1px solid #eee; text-align: center; }
@@ -75,7 +74,7 @@
     <div class="hero">
         <h1>Tu bienestar empieza aquí</h1>
         <p>Fortalece tu salud y vive con más energía cada día.</p>
-        <button class="btn-green">Compra ahora</button>
+        <button class="btn-green">Marca al (55) 5584 5510 para comprar</button>
     </div>
 
     <!-- NAVEGACIÓN -->
@@ -109,51 +108,217 @@
                 <div class="feature-text">Atención personalizada</div>
             </div>
         </div>
-        <div class="whatsapp-container">
-            <a href="#" class="btn-whatsapp">
-                <span>🟢</span> ¡Haz tu pedido por WhatsApp!
-            </a>
-        </div>
     </div>
 
-    <!-- CATÁLOGO (EJEMPLOS) -->
+    <!-- CATÁLOGO COMPLETO -->
     <div class="container products-section">
         <div class="products-title">Elementos y Suplementos</div>
         <div class="grid">
-            <!-- Producto 1 -->
+            <!-- 1 -->
             <div class="card">
                 <div class="card-header">ACEITE GOMENOLADO</div>
                 <div class="card-body">
                     <div class="stars">★★★★★ (5)</div>
                     <div class="price">$200.00</div>
-                    <button class="btn-outline">Compra ahora</button>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
                 </div>
             </div>
-            <!-- Producto 2 -->
+            <!-- 2 -->
             <div class="card">
                 <div class="card-header">AJO JAPONÉS</div>
                 <div class="card-body">
-                    <div class="stars">★★★★☆ (12)</div>
-                    <div class="price">$250.00</div>
-                    <button class="btn-outline">Compra ahora</button>
-                </div>
-            </div>
-            <!-- Producto 3 -->
-            <div class="card">
-                <div class="card-header">ASTAXANTINAS</div>
-                <div class="card-body">
                     <div class="stars">★★★★★ (8)</div>
-                    <div class="price">$300.00</div>
-                    <button class="btn-outline">Compra ahora</button>
+                    <div class="price">$200.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
                 </div>
             </div>
-            <!-- Producto 4 -->
+            <!-- 3 -->
+            <div class="card">
+                <div class="card-header">AXTASANTINAS</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (12)</div>
+                    <div class="price">$300.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="card">
+                <div class="card-header">ATRAOL<br>(ÁCIDO ALFA LIPOICO)</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (7)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="card">
+                <div class="card-header">BIO-LX</div>
+                <div class="card-body">
+                    <div class="stars">★★★★☆ (3)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="card">
+                <div class="card-header">BIO-LX ONE</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (9)</div>
+                    <div class="price">$499.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="card">
+                <div class="card-header">BIOFLAVERIN<br>PYCNOGENOL</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (4)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="card">
+                <div class="card-header" style="background-color: #d35400;">BIOLACT (EN OFERTA)</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (15)</div>
+                    <div class="price">$299.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="card">
+                <div class="card-header" style="background-color: #d35400;">BIOLACT PLUS (EN OFERTA)</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (11)</div>
+                    <div class="price">$499.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="card">
+                <div class="card-header">BIOSIL</div>
+                <div class="card-body">
+                    <div class="stars">★★★★☆ (6)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 11 -->
+            <div class="card">
+                <div class="card-header">CALCIO</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (21)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="card">
+                <div class="card-header">CARTRIDOL</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (18)</div>
+                    <div class="price">$499.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 13 -->
+            <div class="card">
+                <div class="card-header">CASTELA PLUS</div>
+                <div class="card-body">
+                    <div class="stars">★★★★☆ (5)</div>
+                    <div class="price">$200.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 14 -->
+            <div class="card">
+                <div class="card-header">CERBLANC</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (7)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 15 -->
+            <div class="card">
+                <div class="card-header" style="background-color: #d35400;">CG MAX (EN OFERTA)</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (14)</div>
+                    <div class="price">$499.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 16 -->
+            <div class="card">
+                <div class="card-header">CG PLUS</div>
+                <div class="card-body">
+                    <div class="stars">★★★★☆ (9)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 17 -->
             <div class="card">
                 <div class="card-header">COLÁGENO</div>
                 <div class="card-body">
-                    <div class="stars">★★★★★ (24)</div>
-                    <div class="price">$450.00</div>
-                    <button class="btn-outline">Compra ahora</button>
+                    <div class="stars">★★★★★ (28)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 18 -->
+            <div class="card">
+                <div class="card-header">COM-BTS</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (4)</div>
+                    <div class="price">$200.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 19 -->
+            <div class="card">
+                <div class="card-header">CONDROITINA</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (16)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 20 -->
+            <div class="card">
+                <div class="card-header">CÚRCUMA</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (22)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 21 -->
+            <div class="card">
+                <div class="card-header">DEPURADOR HEPÁTICO</div>
+                <div class="card-body">
+                    <div class="stars">★★★★☆ (11)</div>
+                    <div class="price">$200.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 22 -->
+            <div class="card">
+                <div class="card-header">CÉLULAS MADRE</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (5)</div>
+                    <div class="price">$1600.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
+                </div>
+            </div>
+            <!-- 23 -->
+            <div class="card">
+                <div class="card-header">ELOFES</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (8)</div>
+                    <div class="price">$125.00</div>
+                    <button class="btn-outline">Marca al (55) 5584 5510 para comprar</button>
                 </div>
             </div>
         </div>
