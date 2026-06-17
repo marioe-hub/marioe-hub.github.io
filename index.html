@@ -4,95 +4,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Estilo de Vida Polanco</title>
+    
+    <!-- ETIQUETA DE META (NO BORRAR) -->
     <meta name="facebook-domain-verification" content="ry71k5i6nbiynfs1pdpopb3qcfg32f" />
+
     <style>
-        /* Estilos generales para un look moderno */
+        /* ESTILOS GENERALES */
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f0f4f8; /* Un gris-azul muy sutil y médico */
-            color: #2d3748;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        /* Tarjeta central flotante */
-        .card {
+            padding: 0;
+            color: #333;
             background-color: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            max-width: 500px;
-            width: 90%;
-            text-align: center;
-            border-top: 6px solid #0077b6; /* Azul corporativo */
         }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
 
-        /* Títulos y textos */
-        h1 {
-            color: #0077b6;
-            margin-top: 0;
-            margin-bottom: 5px;
-            font-size: 1.8em;
-        }
+        /* ENCABEZADO */
+        .hero { text-align: center; padding: 60px 20px 20px; }
+        .hero h1 { font-size: 3.5em; font-weight: 900; font-style: italic; color: #333; letter-spacing: -1px; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; color: #555; margin-bottom: 30px; }
+        .btn-green { background-color: #1b7a1b; color: white; padding: 12px 30px; border-radius: 5px; font-weight: bold; display: inline-block; font-size: 1.1em; border: none; cursor: pointer; }
+        
+        /* NAVEGACIÓN Y LOGO */
+        .brand-section { text-align: center; padding: 30px 0; border-bottom: 1px solid #eee; }
+        .brand-logo { font-size: 2em; font-weight: bold; color: #e67e22; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px; font-size: 0.9em; color: #666; }
 
-        .legal {
-            font-size: 0.85em;
-            color: #718096;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
+        /* VENTAJAS (ÍCONOS) */
+        .features-title { text-align: center; font-size: 1.2em; margin: 40px 0 20px; font-weight: bold; }
+        .features-grid { display: flex; justify-content: center; gap: 60px; text-align: center; flex-wrap: wrap; margin-bottom: 30px; }
+        .feature-item { max-width: 120px; }
+        .feature-icon { font-size: 3em; margin-bottom: 10px; }
+        .feature-text { font-size: 0.9em; font-weight: bold; color: #555; }
+        .whatsapp-container { text-align: center; margin-bottom: 50px; }
+        .btn-whatsapp { background-color: #25D366; color: white; padding: 10px 25px; border-radius: 20px; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; }
 
-        .info-container {
-            text-align: left;
-            background-color: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-        }
+        /* CATÁLOGO DE PRODUCTOS */
+        .products-section { padding: 40px 0; }
+        .products-title { text-align: center; font-size: 1.5em; margin-bottom: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #eaeaea; text-align: center; background: #fff; display: flex; flex-direction: column; }
+        .card-header { background-color: #387c2b; color: white; padding: 30px 10px; font-size: 1.3em; font-weight: bold; min-height: 60px; display: flex; align-items: center; justify-content: center; }
+        .card-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .stars { color: #f39c12; letter-spacing: 2px; margin: 10px 0; font-size: 0.8em; }
+        .price { font-weight: bold; font-size: 1.2em; margin-bottom: 15px; }
+        .btn-outline { border: 1px solid #ccc; background: white; color: #333; padding: 8px; font-size: 0.9em; cursor: pointer; transition: 0.3s; margin-top: auto; }
+        .btn-outline:hover { background: #f5f5f5; }
 
-        .info-item {
-            margin: 12px 0;
-            font-size: 1.05em;
-            display: flex;
-            align-items: center;
-        }
+        /* INFORMACIÓN Y MAPA */
+        .info-section { background-color: #fcfcfc; padding: 60px 20px; border-top: 1px solid #eee; text-align: center; }
+        .info-title { font-size: 1.8em; font-weight: bold; margin-bottom: 20px; color: #333; }
+        .info-text { max-width: 800px; margin: 0 auto 50px; color: #666; line-height: 1.6; }
+        
+        .location-container { display: flex; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; background: white; border: 1px solid #eaeaea; text-align: left; }
+        .map-box { flex: 1; min-width: 300px; }
+        .map-box iframe { width: 100%; height: 100%; min-height: 350px; border: none; }
+        .address-box { flex: 1; min-width: 300px; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+        .address-box h3 { margin-top: 0; color: #333; }
+        .address-box p { color: #666; line-height: 1.6; margin-bottom: 20px; }
 
-        .icon {
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-
-        /* Pie de página sutil */
-        .footer {
-            margin-top: 30px;
-            font-size: 0.8em;
-            color: #a0aec0;
-        }
+        /* PIE DE PÁGINA */
+        .footer { text-align: center; padding: 40px 20px; color: #777; font-size: 0.9em; }
+        .footer-contact { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 15px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Clínica Estilo de Vida Polanco</h1>
-        <div class="legal">Razón Social: Martin Diaz Marcelin</div>
-        
-        <div class="info-container">
-            <div class="info-item">
-                <span class="icon">📞</span> 
-                <strong>Contacto:</strong>&nbsp; 55 5584 5510
+    <!-- SECCIÓN HERO -->
+    <div class="hero">
+        <h1>Tu bienestar empieza aquí</h1>
+        <p>Fortalece tu salud y vive con más energía cada día.</p>
+        <button class="btn-green">Compra ahora</button>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <div class="container brand-section">
+        <div class="brand-logo">
+            <span style="font-size: 1.5em;">🧡</span> Clínica Estilo de Vida Polanco
+        </div>
+        <div class="nav-links">
+            <span>Elementos y Suplementos</span>
+            <span>Promociones y Paquetes</span>
+            <span>Cosméticos</span>
+            <span>Testimonios</span>
+            <span>Contacto</span>
+        </div>
+    </div>
+
+    <!-- VENTAJAS -->
+    <div class="container">
+        <div class="features-title">Bienvenidos a la mejor clínica y farmacia para mejorar su calidad de vida.</div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">✅</div>
+                <div class="feature-text">Calidad garantizada</div>
             </div>
-            <div class="info-item">
-                <span class="icon">📍</span> 
-                <strong>Dirección:</strong>&nbsp; Av. Ferrocarril de Cuernavaca #218
+            <div class="feature-item">
+                <div class="feature-icon">🚚</div>
+                <div class="feature-text">Envío rápido y seguro</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🤝</div>
+                <div class="feature-text">Atención personalizada</div>
             </div>
         </div>
+        <div class="whatsapp-container">
+            <a href="#" class="btn-whatsapp">
+                <span>🟢</span> ¡Haz tu pedido por WhatsApp!
+            </a>
+        </div>
+    </div>
 
-        <div class="footer">
-            Portal oficial de información de la clínica.
+    <!-- CATÁLOGO (EJEMPLOS) -->
+    <div class="container products-section">
+        <div class="products-title">Elementos y Suplementos</div>
+        <div class="grid">
+            <!-- Producto 1 -->
+            <div class="card">
+                <div class="card-header">ACEITE GOMENOLADO</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (5)</div>
+                    <div class="price">$200.00</div>
+                    <button class="btn-outline">Compra ahora</button>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="card">
+                <div class="card-header">AJO JAPONÉS</div>
+                <div class="card-body">
+                    <div class="stars">★★★★☆ (12)</div>
+                    <div class="price">$250.00</div>
+                    <button class="btn-outline">Compra ahora</button>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="card">
+                <div class="card-header">ASTAXANTINAS</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (8)</div>
+                    <div class="price">$300.00</div>
+                    <button class="btn-outline">Compra ahora</button>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="card">
+                <div class="card-header">COLÁGENO</div>
+                <div class="card-body">
+                    <div class="stars">★★★★★ (24)</div>
+                    <div class="price">$450.00</div>
+                    <button class="btn-outline">Compra ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN QUIENES SOMOS Y UBICACIÓN -->
+    <div class="info-section">
+        <div class="container">
+            <div class="info-title">¿Quiénes somos?</div>
+            <p class="info-text">
+                Somos una clínica y farmacia especializada con presencia a nivel nacional. Nuestro laboratorio aliado tiene años colaborando con la suplementación y el cuidado de la salud de nuestros pacientes, garantizando siempre los mejores estándares de calidad.
+            </p>
+
+            <div class="info-title">Ubicación</div>
+            <div class="location-container">
+                <div class="map-box">
+                    <!-- IFRAME DE GOOGLE MAPS APUNTANDO A FERROCARRIL DE CUERNAVACA -->
+                    <iframe src="https://maps.google.com/maps?q=Av.%20Ferrocarril%20de%20Cuernavaca%20218,%20Miguel%20Hidalgo,%20CDMX&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+                <div class="address-box">
+                    <p>Puede acudir directamente a nuestra clínica a solicitar sus productos o sus promociones de manera personal y recibir atención cordial por nuestro personal que con mucho gusto le atenderá.</p>
+                    
+                    <h3>Dirección</h3>
+                    <p>Av. Ferrocarril de Cuernavaca #218<br>
+                    Alcaldía Miguel Hidalgo<br>
+                    Ciudad de México, CDMX</p>
+
+                    <h3>Horario de la clínica</h3>
+                    <p>Lunes - Viernes: 10:00 a.m. - 6:00 p.m.<br>
+                    Sábados: 10:00 a.m. - 3:00 p.m.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACTO LEGAL (MUY IMPORTANTE PARA META) -->
+    <div class="footer">
+        <div class="footer-contact">
+            <span>📞 (55) 5584 5510</span>
+            <span>✉️ contacto@estilodevidapolanco.com</span>
+        </div>
+        <div>
+            Razón Social: Martin Diaz Marcelin <br>
+            © 2026 Clínica Estilo de Vida Polanco. Todos los derechos reservados.
         </div>
     </div>
 
